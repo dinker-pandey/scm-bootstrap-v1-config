@@ -7,3 +7,9 @@ eureka:
     fetchRegistry: false
     service-url:
       defaultZone: http://localhost:9088/eureka
+
+
+
+#Put it at last for future reference      
+#not required
+#eureka.client.enabled=true

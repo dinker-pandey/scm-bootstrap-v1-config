@@ -1,0 +1,17 @@
+server:
+  port: 9090
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:9088/eureka}
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+
+
+#Put it at last for future reference
+#not required with latest version update
+#spring.cloud.gateway.discovery.locator.enabled=true
+
